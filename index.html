@@ -34,22 +34,22 @@ Known Issues:
 
 
 <script>
-        var scenic_count = 0;//variable to keep track of the number of times the user answers a question that leads to the city preference 
-        var quick_count = 0;//variable to keep track of the number of times the user answers a question that leads to the country preference 
+        var scenic_count = 0;//variable to keep track of the number of times the user answers a question that leads to the scenic preference 
+        var quick_count = 0;//variable to keep track of the number of times the user answers a question that leads to the quick preference 
 
         function scenicAdd(){ //this function is used to add an additional count to city_count each time it is called
             scenic_count = scenic_count + 1; 
-		//alert("city_count is " + city_count); I wanted to further clarify that the alert is displaying the count for city_count, but this code is now irrelevant
+		//alert("scenic_count is " + scenicy_count); I wanted to further clarify that the alert is displaying the count for scenic_count, but this code is now irrelevant
         }
 
         function quickAdd(){
             quick_count = quick_count + 1;//this function is used to add an additional count to country_count each time it is called
-		//alert("country_count is " + country_count); I wanted to add further clarify that the alert is displaying the count for country_count, but this code is now irrelevant
+		//alert("quick_count is " + quick_count); I wanted to add further clarify that the alert is displaying the count for quick_count, but this code is now irrelevant
         }
 
 	function outputResults(){
-		var percent_scenic = scenic_count/(scenic_count + quick_count)*100; // This line converts the city_count into a percentage
-		var percent_quick = quick_count/(scenic_count + quick_count)*100; // This line converts the country_count into a percentage
+		var percent_scenic = scenic_count/(scenic_count + quick_count)*100; // This line converts the scenic_count into a percentage
+		var percent_quick = quick_count/(scenic_count + quick_count)*100; // This line converts the quick_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
 		resultsLocation.innerHTML = "Your preference is scenic = " + percent_scenic + "% <br> Your preference is quick = " + percent_quick + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
@@ -187,7 +187,7 @@ Known Issues:
 	
 
 <footer class="w3-bottom w3-container w3-flat-pomegranate">
-	<p>DIY!</p>
+	<p>Ain't that something</p>
 </footer>
 
 </body>
